@@ -1,4 +1,9 @@
 import styled from 'styled-components';
+import twitterLogo from './assets/twitter.svg';
+import facebookLogo from './assets/facebook.svg';
+import linkedinLogo from './assets/linkedin.svg';
+import pinterestLogo from './assets/pinterest.svg';
+import emailLogo from './assets/email.svg';
 
 interface IconRowProps {
     isMobile: boolean;
@@ -16,27 +21,27 @@ const IconRow = ({ isMobile }: IconRowProps) => {
     const icons: ShareIcon[] = [
         {
             link: 'https://www.twitter.com/share?url=',
-            imageSource: '/twitter.svg',
+            imageSource: twitterLogo,
             name: 'twitter',
         },
         {
             link: 'https://www.facebook.com/sharer/sharer.php?u=',
-            imageSource: '/facebook.svg',
+            imageSource: facebookLogo,
             name: 'facebook',
         },
         {
             link: 'https://www.linkedin.com/sharing/share-offsite/?url=',
-            imageSource: '/linkedin.svg',
+            imageSource: linkedinLogo,
             name: 'linkedin',
         },
         {
             link: 'https://pinterest.com/pin/create/link/?url=',
-            imageSource: '/pinterest.svg',
+            imageSource: pinterestLogo,
             name: 'pinterest',
         },
         {
             link: 'mailto:?subject=check out this link&body=',
-            imageSource: '/email.svg',
+            imageSource: emailLogo,
             name: 'email',
         },
     ];
